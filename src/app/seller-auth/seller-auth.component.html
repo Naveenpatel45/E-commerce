@@ -1,0 +1,20 @@
+<div class="sellerLogin" *ngIf="!isLoginOrSignup">
+    <h1>Seller Sign Up</h1>
+    <form  [formGroup]="sellerForm">
+        <input type="text" placeholder="Enter Name" formControlName="name">
+        <input type="password" placeholder="Enter Password" formControlName="password">
+        <input type="email" placeholder="Enter Email" formControlName="email">
+        <button (click)="signUp()">Signup</button>
+        <a style="cursor: pointer;" (click)="signupToLogin()">Already have an account ? Click here to Login</a>
+    </form>
+</div>
+<div class="sellerLogin" *ngIf="isLoginOrSignup">
+    <h1>Seller Login</h1>
+    <p style="color: red; text-align: center;">{{errorData}}</p>
+    <form  [formGroup]="sellerLoginForm">
+        <input type="email" placeholder="Enter Email" formControlName="email">
+        <input type="password" placeholder="Enter Password" formControlName="password">
+        <button (click)="Login()">Login</button>
+        <a style="cursor: pointer;" (click)="loginToSignup()">If you dont have an account ? Click here to signup</a>
+    </form>
+</div>

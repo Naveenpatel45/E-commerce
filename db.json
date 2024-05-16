@@ -1,0 +1,70 @@
+{
+  "seller": [
+    {
+      "id": "c645",
+      "name": "suleman",
+      "password": "sulligadu",
+      "email": "sulla@abc.com"
+    },
+    {
+      "id": "bae0",
+      "name": "Ramki",
+      "password": "kalki@123",
+      "email": "ramki@kalki.com"
+    },
+    {
+      "id": "a49a",
+      "name": "naveen",
+      "password": "12345",
+      "email": "naveen@bcom.com"
+    },
+    {
+      "id": "5db8",
+      "name": "jkn",
+      "password": "kkl;l'",
+      "email": "mxb@b.com"
+    },
+    {
+      "id": "75df",
+      "name": "jhdfgdfg",
+      "password": "fgjfjnd",
+      "email": "abc@gmail.com"
+    },
+    {
+      "id": "83ac",
+      "name": "hfdgnd",
+      "password": "hjkihlih",
+      "email": "abc@gmail.com"
+    },
+    {
+      "id": "e15b",
+      "name": "rtyu",
+      "password": "ghjkljh",
+      "email": "fgh@dfg.com"
+    },
+    {
+      "id": "1094",
+      "name": "rtyu",
+      "password": "ghjkljh",
+      "email": "fgh@dfg.com"
+    },
+    {
+      "id": "c3be",
+      "name": "nethaji",
+      "password": "1123456",
+      "email": "ne@gmail.com"
+    },
+    {
+      "id": "4449",
+      "name": "naveen",
+      "password": "123456",
+      "email": "abc@gmail.com"
+    },
+    {
+      "id": "276b",
+      "name": "naveen",
+      "password": "123456",
+      "email": "na@nc.com"
+    }
+  ]
+}

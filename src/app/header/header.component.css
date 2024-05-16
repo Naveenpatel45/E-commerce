@@ -1,0 +1,25 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-search{
+    display: flex;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.nav-search input{
+    flex: 1;
+    height: 30px;
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav ul>li a{
+    text-decoration: none;
+}
+.nav ul>li{
+    margin-right: 10px;
+}
