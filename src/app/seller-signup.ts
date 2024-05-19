@@ -4,3 +4,13 @@ export interface SellerSignup {
     "email":string,
     "id" ?: string
 }
+
+export interface productAdd{
+    "name": string,
+    "price": string,
+    "category": string,
+    "color": string,
+    "description": string,
+    "url": string,
+    "id" ?: string
+}

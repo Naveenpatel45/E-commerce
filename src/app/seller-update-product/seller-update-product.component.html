@@ -1,7 +1,7 @@
 <div class="container">
-    <h1>ADD NEW PRODUCT</h1>
-    <p *ngIf="isSuccess" style="color: green; text-align: center;">Product added successfully</p>
-    <form action="" [formGroup]="productForm" (ngSubmit)="addProduct()">
+    <h1>UPDATE PRODUCT</h1>
+    <p style="color: green; text-align: center;" *ngIf="isUpdated">Updated Successfully</p>
+    <form action="" [formGroup]="productForm" (ngSubmit)="updateProduct()">
         <input type="text" placeholder="Enter product name" formControlName="name">
         <input type="text" placeholder="Enter product price" formControlName="price">
         <input type="text" placeholder="Enter product category" formControlName="category">
@@ -9,6 +9,6 @@
         <textarea name="" placeholder="Enter product description" id="" formControlName="description"></textarea >
         <input type="text" placeholder="Enter product Image URL" formControlName="url">
 
-        <button>ADD PRODUCT</button>
+        <button>UPDATE PRODUCT</button>
     </form>
 </div>

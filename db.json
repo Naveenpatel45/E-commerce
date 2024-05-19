@@ -66,5 +66,16 @@
       "password": "123456",
       "email": "na@nc.com"
     }
+  ],
+  "products": [
+    {
+      "name": "poco x2",
+      "price": "12000",
+      "category": "electronics",
+      "color": "black",
+      "description": "nice",
+      "url": "https://tse4.mm.bing.net/th?id=OIP.-Gn4O_oZSm39veYWSWzIUAHaHa&pid=Api&P=0&h=180",
+      "id": "7ddb"
+    }
   ]
 }
