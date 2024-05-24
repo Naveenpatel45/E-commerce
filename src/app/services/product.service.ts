@@ -30,4 +30,7 @@ export class ProductService {
   popularProducts(){
     return this.http.get<productAdd[]>("http://localhost:3000/products?_limit=3")
   }
+  getSearchedProducts(data:string){
+    return this.http.get<productAdd[]>('http://localhost:3000/products?color='+data)
+  }
 }

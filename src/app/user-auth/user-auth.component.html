@@ -1,0 +1,9 @@
+<div class="container">
+    <h1 style="text-align: center; margin: 10px;">SignUp Form</h1>
+    <form [formGroup]="signUpForm" > 
+        <input type="text" placeholder="UserName" formControlName="name">
+        <input type="email" placeholder="Email" formControlName="email">
+        <input type="password" placeholder="Password" formControlName="password">
+        <button (click)="signUp()">SignUp</button>
+    </form>
+</div>

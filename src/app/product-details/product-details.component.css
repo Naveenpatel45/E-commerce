@@ -1,0 +1,21 @@
+.main{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+.cMain{
+  width: 40%;
+}
+.cMain span{
+    display: inline-block;
+    border: 3px solid gray;
+    border-radius: 50%;
+    background-color: blue;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+.btn input{
+    width: 30px;
+}

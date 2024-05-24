@@ -1,0 +1,21 @@
+<div class="main">
+        <div class="cMain" >
+            <img [src]="productData && productData.url" alt="" height="100%" width="100%" style="object-fit: contain;">
+        </div>
+        <div class="cMain">
+            <h1>Name:{{productData && productData.name | uppercase}}</h1>
+            <h3>Price:{{productData &&  productData.price | currency:'INR'}}</h3>
+            <h3 style="display: flex;">Color: <span [ngStyle]="{'background-color':productData && productData.color?productData.color:''}"></span></h3>
+            <h3>Category: {{productData && productData.category | uppercase}}</h3>
+            <h3>Description:{{productData && productData.description | uppercase}}</h3>
+            <button class="btn btn-primary">Buy Now</button>
+            <button class="btn btn-primary" style="margin-left: 10px;">Add To Cart</button>
+            <br>
+            <div class="btn" style="margin-top: 5px; display: flex; column-gap: 20px; align-items: center;">
+                <h3>Number of products:</h3>
+                <div>
+                    <button (click)="cal('sub')">-</button><input type="number" value="1" [(ngModel)]="nProds"><button (click)="cal('add')">+</button>
+                </div>
+            </div>
+        </div>    
+</div>

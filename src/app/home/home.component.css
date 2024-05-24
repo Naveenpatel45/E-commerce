@@ -17,3 +17,8 @@
 .card-body-top{
     padding: 20px;
 }
+.item-image{
+    height: 286px;
+    width: 286px;
+    object-fit: contain;
+}

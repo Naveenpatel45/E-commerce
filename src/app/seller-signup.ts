@@ -14,3 +14,10 @@ export interface productAdd{
     "url": string,
     "id" ?: string
 }
+
+export interface UserSignup{
+    "name":string,
+    "mail":string,
+    "password":string,
+    "id" ?:string
+}
