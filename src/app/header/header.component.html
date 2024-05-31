@@ -9,7 +9,7 @@
         <li><a routerLink="seller-auth">Seller</a></li>
         <li><a routerLink="">Home</a></li>
         <li><a routerLink="/userAuth">Login/Signup</a></li>
-        <li><a href="#">Cart()</a></li>
+        <li><a href="#">Cart({{cartNumber}})</a></li>
     </ul>
     <ul *ngSwitchCase="'seller'">
         <li><a routerLink="seller-add-product">ADD PRODUCT</a></li>
@@ -22,6 +22,7 @@
         <li><a routerLink="" style="cursor: pointer;">Home</a></li>
         <li><a (click)="userLogout()" style="cursor: pointer;">Logout</a></li>
         <li><a href="#">{{userSignUpData.name | titlecase}}</a></li>
+        <li><a routerLink="/cart-page" style="cursor: pointer;">Cart({{cartNumber}})</a></li>
     </ul>
 </div>
 

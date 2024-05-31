@@ -1,0 +1,13 @@
+.col-left-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.col-left-c input,button{
+    width: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    height: 35px;
+}

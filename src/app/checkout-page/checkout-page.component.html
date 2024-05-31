@@ -1,0 +1,22 @@
+<h1 style="text-align: center;">CheckOut</h1>
+<div class="main" style="height: 90vh;">
+    <div class="row" style="height: 100%;">
+        <div class="col-sm-6">
+            <div class="col-left-c">
+                <h2>Add Shipping address</h2>
+                <form [formGroup]="userAddressForm">
+                    <input type="email" placeholder="Enter User Email" formControlName="email"><br>
+                    <input type="text" placeholder="Enter User Address" formControlName="address"><br>
+                    <input type="number" placeholder="Enter Contact Details" formControlName="contact"><br>
+                    <button style="background-color: blueviolet; color: white;" (click)="addressForm()">Order Now</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-6">
+              <div class="col-left-r">
+                   <h1>Total Amount :{{totalPrice | currency:'INR'}}</h1>
+                   <h3>Payment Method: <b>cash on delivery</b></h3>
+              </div>
+        </div>
+    </div>
+</div>

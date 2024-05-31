@@ -1,0 +1,44 @@
+<div class="main" style="height: 100vh;">
+    <h1  style="align-items: center; display: flex; justify-content: center;">CART ITEMS</h1>
+    <div class="row" style="height: 100%;">
+        <div class="col-sm-8" >
+           <div class="innerDiv" style="height: 30%;  display: flex; justify-content: space-evenly; align-items: center;" *ngFor="let prod of cartProducts">
+                 <img src={{prod.url}} alt="" height="80%" width="30%">
+                 <p style="font-size: 20px; font-weight: 500;">{{prod.name | uppercase}}</p>
+                 <p style="font-size: 20px; font-weight: 500;">Price :{{prod.price | currency:'INR'}}</p>
+                 <p style="font-size: 20px; font-weight: 500;">Quantity: {{prod.quantity}}</p>
+                 <button style="height: 60px; background-color: blueviolet; border-radius: 10px; border: 0; color: white; font-size: 15px; font-weight: 400;">Remove from cart</button>
+           </div>
+        </div>
+        <div class="col-sm-4" >
+            <h1>Summary</h1>
+            <table style="width: 100%;">
+                <tr>
+                    <td>Amount:</td>
+                    <td>{{prodRates.price | currency:'INR'}}</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>{{prodRates.tax | currency:'INR'}}</td>
+                </tr>
+                <tr>
+                    <td>Delivery:</td>
+                    <td>{{prodRates.delivery | currency:'INR'}}</td>
+                </tr>
+                <tr>
+                    <td>Discount:</td>
+                    <td>{{prodRates.discount | currency:'INR'}}</td>
+                </tr>
+                <tr>
+                    <th>Total:</th>
+                    <th>{{prodRates.total | currency:'INR'}}</th>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button style="height: 60px; background-color: blueviolet; border-radius: 10px; border: 0; color: white; font-size: 15px; font-weight: 400; margin: 75px;"  (click)="navigate()">Check Out Now</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

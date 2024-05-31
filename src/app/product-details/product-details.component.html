@@ -9,7 +9,8 @@
             <h3>Category: {{productData && productData.category | uppercase}}</h3>
             <h3>Description:{{productData && productData.description | uppercase}}</h3>
             <button class="btn btn-primary">Buy Now</button>
-            <button class="btn btn-primary" style="margin-left: 10px;">Add To Cart</button>
+            <button class="btn btn-primary" style="margin-left: 10px;" (click)="addToCart()" *ngIf="!showRemoveCart">Add To Cart</button>
+            <button class="btn btn-primary" style="margin-left: 10px;" (click)="removeFromCart()" *ngIf="showRemoveCart">Remove from Cart</button>
             <br>
             <div class="btn" style="margin-top: 5px; display: flex; column-gap: 20px; align-items: center;">
                 <h3>Number of products:</h3>

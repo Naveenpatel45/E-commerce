@@ -159,6 +159,119 @@
       "name": "krishna",
       "email": "ksn@gmail.com",
       "password": "123456"
+    },
+    {
+      "id": "2d9c",
+      "name": "kranthi",
+      "email": "kr@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "a2f1",
+      "name": "Ramki",
+      "email": "rk@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "69c0",
+      "name": "vasu",
+      "email": "vk@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "1c45",
+      "name": "kohli",
+      "email": "virat@gmail.com",
+      "password": "123456"
     }
+  ],
+  "cartItems": [
+    {
+      "id": "1e3f",
+      "name": "poco x2",
+      "price": "12000",
+      "category": "electronics",
+      "color": "black",
+      "description": "nice",
+      "url": "https://tse4.mm.bing.net/th?id=OIP.-Gn4O_oZSm39veYWSWzIUAHaHa&pid=Api&P=0&h=180",
+      "userId": "c32a",
+      "quantity": "3",
+      "productId": "7ddb"
+    },
+    {
+      "id": "3bcf",
+      "name": "poco x2",
+      "price": "12000",
+      "category": "electronics",
+      "color": "black",
+      "description": "nice",
+      "url": "https://tse4.mm.bing.net/th?id=OIP.-Gn4O_oZSm39veYWSWzIUAHaHa&pid=Api&P=0&h=180",
+      "userId": "6f68",
+      "quantity": "1",
+      "productId": "7ddb"
+    },
+    {
+      "id": "9376",
+      "name": "poco x2",
+      "price": "12000",
+      "category": "electronics",
+      "color": "black",
+      "description": "nice",
+      "url": "https://tse4.mm.bing.net/th?id=OIP.-Gn4O_oZSm39veYWSWzIUAHaHa&pid=Api&P=0&h=180",
+      "quantity": "1",
+      "productId": "7ddb",
+      "userId": "2d9c"
+    },
+    {
+      "id": "e324",
+      "name": "I phone 15 pro max",
+      "price": "189999",
+      "category": "electronics",
+      "color": "white",
+      "description": "good mobile",
+      "url": "https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/tile/Apple-iPhone-15-Pro-lineup-hero-230912.jpg.news_app_ed.jpg",
+      "quantity": "1",
+      "productId": "d442",
+      "userId": "2d9c"
+    },
+    {
+      "id": "7b06",
+      "name": "I phone 15 pro max",
+      "price": "189999",
+      "category": "electronics",
+      "color": "white",
+      "description": "good mobile",
+      "url": "https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/tile/Apple-iPhone-15-Pro-lineup-hero-230912.jpg.news_app_ed.jpg",
+      "quantity": "2",
+      "productId": "d442",
+      "userId": "57b8"
+    },
+    {
+      "id": "56a4",
+      "name": "poco x2",
+      "price": "12000",
+      "category": "electronics",
+      "color": "black",
+      "description": "nice",
+      "url": "https://tse4.mm.bing.net/th?id=OIP.-Gn4O_oZSm39veYWSWzIUAHaHa&pid=Api&P=0&h=180",
+      "userId": "57b8",
+      "quantity": "1",
+      "productId": "7ddb"
+    },
+    {
+      "id": "c85c",
+      "name": "I phone 15 pro max",
+      "price": "189999",
+      "category": "electronics",
+      "color": "white",
+      "description": "good mobile",
+      "url": "https://www.apple.com/newsroom/images/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/tile/Apple-iPhone-15-Pro-lineup-hero-230912.jpg.news_app_ed.jpg",
+      "userId": "c32a",
+      "quantity": "1",
+      "productId": "d442"
+    }
+  ],
+  "orders":[
+    
   ]
 }

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" *ngIf="formToShow">
     <h1 style="text-align: center; margin: 10px;">SignUp Form</h1>
     <form [formGroup]="signUpForm" > 
         <input type="text" placeholder="UserName" formControlName="name">
@@ -6,4 +6,16 @@
         <input type="password" placeholder="Password" formControlName="password">
         <button (click)="signUp()">SignUp</button>
     </form>
+    <p (click)="signToLogin('signUp')" style="text-align: center;">Already have an account? <span style="color: blueviolet; cursor: pointer;">Login</span></p>
+</div>
+<div class="container" *ngIf="!formToShow">
+    <h1 style="text-align: center; margin: 10px;">Login Form</h1>
+    <form [formGroup]="loginForm" > 
+        <input type="email" placeholder="Email" formControlName="email">
+        <p style="text-align: center; color: red;" *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.invalid">Enter valid email</p>
+        <input type="password" placeholder="Password" formControlName="password">
+        <p style="text-align: center; color: red;" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">Enter valid password</p>
+        <button (click)="login()" [disabled]="loginForm.touched && loginForm.invalid">Login</button>
+    </form>
+    <p (click)="signToLogin('login')" style="text-align: center;">Dont have an account? <span style="color: blueviolet; cursor: pointer;">Signup</span></p>
 </div>

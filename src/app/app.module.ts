@@ -16,6 +16,8 @@ import { SearchProductComponent } from './search-product/search-product.componen
 import { FooterComponent } from './footer/footer.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { UserAuthComponent } from './user-auth/user-auth.component';
+import { CartPageComponent } from './cart-page/cart-page.component';
+import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { UserAuthComponent } from './user-auth/user-auth.component';
     SearchProductComponent,
     FooterComponent,
     ProductDetailsComponent,
-    UserAuthComponent
+    UserAuthComponent,
+    CartPageComponent,
+    CheckoutPageComponent
   ],
   imports: [
     BrowserModule,

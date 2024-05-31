@@ -9,11 +9,18 @@ import { UserSignup, productAdd } from '../seller-signup';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-constructor(private router: Router, private _productService:ProductService){}
+constructor(private router: Router, private _productService:ProductService){
+  if(localStorage.getItem('localCart')){
+    let localData=localStorage.getItem('localCart');
+    let parseData=localData && JSON.parse(localData);
+    _productService.cartNumber.next(parseData.length)
+  }
+}
 menuType:string='default';
 sellerName:string="Seller Name";
 searchInput:string='';
 userSignUpData !:UserSignup;
+cartNumber: number=0;
 ngOnInit(){
   this.router.events.subscribe((val:any)=>{
     if(val.url && val.url.includes('seller')){
@@ -34,6 +41,10 @@ ngOnInit(){
       this.menuType='default'
     }
   })
+
+  this._productService.cartNumber.subscribe((res:number)=>{
+    this.cartNumber=res;
+  })
 }
 logout(){
   localStorage.removeItem("seller")
@@ -45,6 +56,8 @@ searchItem(){
 }
 userLogout(){
   localStorage.removeItem('user');
-  this.router.navigate(['/userAuth'])
+  this.router.navigate(['/userAuth']);
+  this._productService.cartNumber.next(0)
 }
+
 }
